@@ -22,4 +22,7 @@ class Participante extends Model
     ];
     
     protected $table = 'participantes';
+    protected $primaryKey = 'cedula';
+    public $incrementing = false;
+    protected $keyType = 'integer';
 }

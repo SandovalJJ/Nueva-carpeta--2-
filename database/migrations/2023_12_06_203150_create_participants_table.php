@@ -8,9 +8,9 @@ class CreateParticipantsTable extends Migration
 {
     public function up()
     {
-        Schema::create('participante', function (Blueprint $table) {
+        Schema::create('participantes', function (Blueprint $table) {
             $table->id();
-            $table->integer('cedula')->unique();
+            $table->unsignedBigInteger('cedula')->unique();
             $table->string('nombre', 200);
             $table->date('f_nacimiento');
             $table->string('agencia', 200);
